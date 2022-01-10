@@ -4,7 +4,6 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup 
 import requests
 from konlpy.tag import Okt
-from wordcloud import WordCloud
 import pandas as pd
 import os
 
@@ -17,7 +16,7 @@ options.add_argument("--incognito")
 options.add_argument("--disable-setuid-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_experimental_option("excludeSwitches",['enable-logging'])
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome('/usr/local/bin/chromedriver',options=options)
 
 def google_news(keyword):
     title_keyword=[]
