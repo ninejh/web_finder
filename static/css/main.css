@@ -1,0 +1,243 @@
+* {
+    font-family: "Noto Sans KR", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+  }
+  .contents1 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  
+  .header {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+  }
+  
+  .intro_bg {
+    background: rgb(63, 63, 63);
+    width: 100%;
+    height: 720px;
+    }
+  
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px);
+  }
+  .nav > li {
+    margin-left: 450px;
+  }
+  .nav > li > a {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .intro_text {
+    width: 100%;
+    margin: 225px auto 10px auto;
+    text-align: center;
+  }
+  
+  .intro_text > h1,
+  .intro_text > h3 {
+    color: white;
+  }
+  
+  .search_keyword > form {
+    margin: auto;
+    width: 800px;
+    height: 70px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .search_keyword > form > input {
+    border: none;
+    width: 730px;
+    height: 70px;
+    background: white;
+    color: black;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  
+  .search_keyword > form > span > button {
+    padding-bottom: 10px;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 60px;
+    background: white;
+    color: black;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .link {
+    display: flex;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    position: relative;
+    top: -66px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link > li > div {
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+  }
+  
+  .link > li:not(:last-child) > div {
+    border-right: 1px solid #e1e1e1;
+  }
+  
+  .link > li {
+    flex: 1;
+    height: 132px;
+  }
+  
+  .result {
+    font-size: 24px;
+  }
+  .about_bg{
+    margin: 50px auto 10px auto;
+    width: 400px;
+    height: 300px;
+    }
+  
+  .result > a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .main_text0 {
+    width: 100%;
+    height: 700px;
+    margin-top: -132px;
+    background: #f1f2f3;
+  }
+  .main_text0 > h1 {
+    padding-top: 116px;
+    text-align: center;
+  }
+  .main_contents {
+    margin: auto;
+    width: 1280px;
+    height: 382px;
+  }
+  .about_contents {
+    margin: auto;
+    width: 900px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+  
+  .main_text1{
+    width: 100%;
+    height: 318px;
+    background: white
+  }
+  .main_text1 > h1 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .main_contents1{
+    margin: 30px auto auto 830px;
+    width: 260px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .keyword_result{
+      width: 100%;
+      height: 300px;
+      position: relative;
+      top: 200px;
+  }
+  .keyword_content{
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  .keyword_result >ul {
+    margin: auto;
+    width:1800px;
+  }
+  .list1,.list2,.list3 {
+    display: flex;
+  }
+  .list1 > li{
+    margin: 20px 10px auto auto;
+    font-size: 40px;
+    display: flex;
+    color: white;
+  }
+  .list2 > li{
+    margin: 20px 10px auto auto;
+    font-size: 40px;
+    display: flex;
+    color: white;
+  }
+  .list3 > li{
+    margin: 20px 10px auto auto;
+    font-size: 40px;
+    display: flex;
+    color: white;
+  }
+  .link1 {
+    display: flex;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 186px;
+  }
+  
+  .link1 > li > div {
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+  }
+  
+  .link1 > li:not(:last-child) > div {
+    border-right: 1px solid #e1e1e1;
+  }
+  
+  .link1 > li {
+    flex: 1;
+    height: 132px;
+  }
+  .text_again{
+    margin: 116px auto 10px auto;
+    width: 100%;
+    height: 240px;
+    background: #f1f2f3;
+  }
+  
+  .again{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+  }
+  
+  

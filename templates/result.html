@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="intro_bg">
+      <div class="keyword_result">
+        <div class="keyword_content">
+          {{keyword}}에 대하여 {{cnt}}개의 뉴스에서 가장 많이 언급된 20개 단어입니다.(중복 제거)
+        </div>
+        <ul>
+          <div class="list1">
+            <li>{{value1}}</li>
+            <li>{{value2}}</li>
+            <li>{{value3}}</li>
+            <li>{{value4}}</li>
+            <li>{{value5}}</li>
+            <li>{{value6}}</li>
+            <li>{{value7}}</li>
+            <li>{{value8}}</li>
+            <li>{{value9}}</li>
+            <li>{{value10}}</li>
+          </div>
+          <div class="list2">
+            <li>{{value11}}</li>
+            <li>{{value12}}</li>
+            <li>{{value13}}</li>
+            <li>{{value14}}</li>
+            <li>{{value15}}</li>
+            <li>{{value16}}</li>
+            <li>{{value17}}</li>
+            <li>{{value18}}</li>
+            <li>{{value19}}</li>
+            <li>{{value20}}</li>
+          </div>
+          <div class="list3">
+            <li>{{value21}}</li>
+            <li>{{value22}}</li>
+            <li>{{value23}}</li>
+            <li>{{value24}}</li>
+            <li>{{value25}}</li>
+            <li>{{value26}}</li>
+            <li>{{value27}}</li>
+            <li>{{value28}}</li>
+            <li>{{value29}}</li>
+            <li>{{value30}}</li>
+          </div>
+        </ul>
+        <ul class="link1">
+          <li>
+            <div>
+              <div class="contents1">구글 뉴스</div>
+              <div class="result">
+                <a href="https://news.google.co.kr/"
+                  >https://news.google.co.kr/</a
+                >
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="contents1">네이버 뉴스</div>
+              <div class="result">
+                <a href="https://news.naver.com/">https://news.naver.com/</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="contents1">다음 뉴스</div>
+              <div class="result">
+                <a href="https://news.daum.net/">https://news.daum.net/</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="text_again">
+        <div class="again">
+          <a href="https://www.findingkeyword.com/">다른 키워드 검색하기</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

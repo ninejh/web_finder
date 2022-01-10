@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="intro_bg">
+        <!-- 헤더 -->
+        <div id="link_header" class="header">
+          <ul class="nav">
+            <li><a href="#link_header">HOME</a></li>
+            <li><a href="#main_ABOUT">ABOUT</a></li>
+            <li><a href="#main_CONTACT">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- 헤더 -->
+        <div class="keyword">
+          <div class="search_keyword">
+            <div class="intro_text">
+              <h1>원하는 키워드를 입력하세요!</h1>
+              <h3 class="contents1">
+                빠르게 변하는 트렌드, 키워드 검색을 통해 찾으세요(30~60초 소요됩니다.)
+              </h3>
+            </div>
+            <form action=/result method="POST">
+              <input type="search" placeholder="search" name="keyword" />
+              <span><button type="submit">검색</button></span>
+          </form>
+          </div>
+        </div>
+      </div>
+      <ul class="link">
+        <li>
+          <div>
+            <div class="contents1">구글 뉴스</div>
+            <div class="result">
+              <a href="https://news.google.co.kr/"
+                >https://news.google.co.kr/</a
+              >
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="contents1">네이버 뉴스</div>
+            <div class="result">
+              <a href="https://news.naver.com/">https://news.naver.com/</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="contents1">다음 뉴스</div>
+            <div class="result">
+              <a href="https://news.daum.net/">https://news.daum.net/</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div id="main_ABOUT" class="main_text0">
+        <h1>ABOUT</h1>
+        <div class="main_contents">
+          <div class="about_bg">
+            <img src="{{ url_for('static', filename='image/trend.png')}}" />
+          </div>
+          <div class="about_contents">
+            트렌드를 아는 것은 시장경제에서 매우 중요하게 여겨집니다. 이때 현재
+            내가 관심있는 것에 대한 트렌드를 알기 위해서는 수많은 데이터 군집이
+            필요합니다. 이 사이트에서는 이것을 수백개의 뉴스(구글, 네이버,
+            다음)의 헤드라인을 가지고 가공하여 단어 빈도 수로 트렌트를 쉽게
+            파악하게 도와줍니다.
+          </div>
+        </div>
+      </div>
+      <div id="main_CONTACT" class="main_text1">
+        <h1>CONTACT</h1>
+        <div class="main_contents1">
+          <div>만든이: JeongHyun Gu</div>
+          <div>소속: 숭실대학교</div>
+          <div>Email: ku2574@naver.com</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
