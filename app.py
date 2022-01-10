@@ -66,7 +66,6 @@ def naver_news(keyword,title_keyword):
         for title in titles:
             news_title = title.get_text()
             title_keyword.append(news_title)
-        driver.quit()
     return title_keyword
             
 def delete_same(title_keyword):
