@@ -34,6 +34,7 @@ def google_news(keyword):
         news_title = title.find("a").get_text()
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
         title_keyword.append(news_title)
+    driver.quit()
     return title_keyword
         
 def daum_news(keyword,title_keyword):
@@ -50,6 +51,7 @@ def daum_news(keyword,title_keyword):
         for title in titles:
             news_title = title.find("a").get_text()
             title_keyword.append(news_title)
+        driver.quit()
     return title_keyword
             
 def naver_news(keyword,title_keyword):
@@ -66,6 +68,7 @@ def naver_news(keyword,title_keyword):
         for title in titles:
             news_title = title.get_text()
             title_keyword.append(news_title)
+        driver.quit()
     return title_keyword
             
 def delete_same(title_keyword):
