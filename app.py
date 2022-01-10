@@ -137,7 +137,7 @@ def count_keyword(main_keyword):
     col_name=['keyword']
     cnt_df=pd.DataFrame(main_keyword,columns=col_name)
     #가장 많이 언급된 30단어
-    cnt_df=cnt_df['keyword'].value_counts()[:20].index.tolist()
+    cnt_df=cnt_df['keyword'].value_counts()[:30].index.tolist()
     return cnt_df
     
 app = Flask(__name__)
@@ -183,7 +183,17 @@ def result():
       value18=cnt_df[17]
       value19=cnt_df[18]
       value20=cnt_df[19]
-      return render_template("result.html",keyword=keyword, cnt = cnt, value1 = value1, value2 = value2, value3 = value3, value4 = value4, value5 = value5, value6 = value6, value7 = value7, value8 = value8, value9 = value9, value10 = value10, value11 = value11, value12 = value12, value13 = value13, value14 = value14, value15 = value15, value16 = value16, value17 = value17, value18 = value18, value19 = value19 ,value20 = value20)
+      value21=cnt_df[20]
+      value22=cnt_df[21]
+      value23=cnt_df[22]
+      value24=cnt_df[23]
+      value25=cnt_df[24]
+      value26=cnt_df[25]
+      value27=cnt_df[26]
+      value28=cnt_df[27]
+      value29=cnt_df[28]
+      value30=cnt_df[29]
+      return render_template("result.html",keyword=keyword, cnt = cnt, value1 = value1, value2 = value2, value3 = value3, value4 = value4, value5 = value5, value6 = value6, value7 = value7, value8 = value8, value9 = value9, value10 = value10, value11 = value11, value12 = value12, value13 = value13, value14 = value14, value15 = value15, value16 = value16, value17 = value17, value18 = value18, value19 = value19 ,value20 = value20, value21 = value21, value22 = value22, value23 = value23, value24 = value24, value25 = value25, value26 = value26, value27 = value27, value28 = value28, value29 = value29 ,value30 = value30)
       
 
 if __name__ == '__main__':
